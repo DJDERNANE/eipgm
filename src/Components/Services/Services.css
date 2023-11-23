@@ -1,0 +1,17 @@
+.services-wrapper {
+    padding: 0 10%;
+}
+.services-card h1 {
+    transition: .3s ease-in-out;
+    font-weight: 700;
+    font-size: 2.3rem;
+    color: #001219;
+}
+.services-card:hover h1 {
+    color: #fff;
+}
+.services-card:hover {
+    box-shadow: inset 600px 0 0 0 #005498!important;
+    transition: .6s ease-in-out;
+    color: #fff!important;
+}

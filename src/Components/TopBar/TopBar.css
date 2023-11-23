@@ -1,0 +1,32 @@
+.top-bar-component{
+    height: 60px;
+    transition: .3s ease-in-out;
+    z-index: 100;
+    width: 100%;    
+    position: fixed;
+    top: 0;
+    &::after{
+        content: "";
+        position: absolute;
+        height: .2px;
+        width: 90%;
+        bottom: 7px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: rgba(blue,0.2);
+    }
+  }
+  .scrolled{
+    background-color: white;
+  }
+  .top-bar-dropped{
+      background-color: black !important;
+      h1{
+          color: black !important;
+      }
+  }
+  .navbar-responsive-menu {
+    color: #fff;
+    font-size: 1.3rem;
+    position: relative;
+}

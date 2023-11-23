@@ -1,0 +1,20 @@
+img{
+    height: 80px;
+}
+h2{
+   
+        
+       
+        color: #4f5d75;
+    
+}
+h1{
+    
+    
+    color: #001219;
+}
+@media screen and (max-width: 480px) {
+.home-section-content h1 {
+    font-size: 3rem;
+}  
+}

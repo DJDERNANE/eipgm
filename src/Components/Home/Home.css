@@ -1,0 +1,43 @@
+.home-section{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.home-section-cover{
+    position: absolute;
+    z-index: 3;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0,84,152,.45)!important;
+    z-index: 10;
+}
+.home-section video{
+    top: 0;
+    z-index: 1;
+    height: 100vh;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    position: absolute;
+    z-index: -1;
+}
+.home-section-content{
+    z-index: 1000;
+}
+.home-section-content h1 span {
+    color: #ff4747;
+}
+.home-section-content p {
+    margin-top: 20px;
+    color: #ced4da;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+.home-section-content p span {
+    color: #ff4747;
+}
+@media screen and (max-width: 480px) {
+    .home-section-content p{
+        font-size: 1rem;
+    }
+}

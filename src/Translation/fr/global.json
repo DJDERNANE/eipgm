@@ -1,0 +1,43 @@
+{
+    "navbar" : {
+        "home" :"Accueil",
+        "about" :"À propos",
+        "services" :"Services",
+        "products" :"Produits",
+        "contact" :"Contact",
+        "request" :"Demander un devis"
+    },
+    "home":{
+        "title" : "FABRICATION DE SUPPORT METALLIQUE TYPE BS ET ARMEMENTS ET D'IACM "
+    }
+    ,
+    "about":{
+        "subtitle":"ROBUSTE - SÛR - ABORDABLE",
+        "title1":"FABRICATION DES SUPPORTS",
+        "title2":" MÉTALLIQUES UNIQUES",
+        "headdesc":"En 2018, EIPGBM a lancé la fabrication des (IACM 36 KV) interrupteur aérien à commande manuelle elle était la première entreprise algérienne à fabriquer des (IACM 36KV) Localement. Aujourd’hui, le taux d'integration locale à atteint 60% .",
+        "desc1": "Notre société est spécialisée dans la fabrication des pylônes électriques, tout accessoire et charpente métallique. Avec une capacité de productions globale de 12000 tonnes/an.",
+        "desc2":"EIPGBM se place déjà comme un acteur incontournable du secteur de l’électricité en Algérie",
+        "desc3":"Dotée d’un équipement moderne et d’un savoir faire certain grâce à l’apport de son personnel expérimenté, EIPGBM vise une position de leader sur le marché local et se veut une alternative sérieuse que ce soit pour le pylône de moyenne tension ou celui de la haute tension",
+        "desc4":"En 2018, EIPGBM a lancé la fabrication des (IACM 36 KV) interrupteur aérien à commande manuelle avec que première entreprise algérienne à fabriquer des (IACM 36KV) Localement. Aujourd’hui, elle produit 60% pour localement. "
+
+    }
+    ,
+    "services":{
+        "subtitle":"NOUS SOMMES PARMI LES MEILLEURS",
+        "title1":"DÉCOUVREZ NOS SERVICES"
+    },
+    "products":{
+        "subtitle":"QUE PRODUISONS-NOUS ?",
+        "title1":"NOS PRODUITS"
+    },
+    "gallery":{
+        "subtitle":"COMMENT NOUS RÉALISONS LES CHOSES",
+        "title1":"GALERIE DE PHOTOS"
+    },
+    "contact" : {
+        "subtitle":"BESOIN DE PLUS D'INFORMATIONS ?",
+        "title1":"DEMANDER UN DEVIS",
+        "text": "Pour obtenir le devis, veuillez remplir ce formulaire ci-dessous et nous vous contacterons dans les plus brefs délais"
+    }
+}
