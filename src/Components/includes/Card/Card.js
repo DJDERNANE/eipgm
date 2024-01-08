@@ -1,19 +1,17 @@
 import React from 'react';
 import './Card.css';
-import pliage from '../../../assets/pliage.png'
+
 
 export default function Card(props) {
   return (
-    <div data-aos="fade-up" data-aos-delay={props.delay} className='services-card cp-service aos-init aos-animate'>
-        <h1>
+    <div className='services-card  cp-service aos-init aos-animate   relative group overflow-hidden transition-transform duration-100 ease-in-out transform hover:scale-105'>
+        <img src={props.pic}/>
+        <p className='text-xl font-bold py-2'>
             {props.title}
-        </h1>
-        <p>
+        </p>
+        <p className='desc py-2 pb-8 text-sm'>
             {props.desc} 
         </p>
-        <div className='services-card-icon'>
-            <img src={pliage} alt='photo'/>
-        </div>
     </div>
   )
 }

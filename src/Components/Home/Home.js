@@ -1,37 +1,60 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import './Home.css';
-import introvideo from '../../assets/introvideo3.mp4';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { ArrowDown } from 'react-bootstrap-icons';
-import { useTranslation } from 'react-i18next';
+import bg from '../../assets/bg.png';
+import YouTube from 'react-youtube';
+
 export default function Home() {
-    const {t, i18n} = useTranslation("global");
-    
+
+    const onReady = (event) => {
+        // Access to player in all event handlers via event.target
+        setPlayer(event.target);
+        event.target.playVideo();
+    };
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    const [player, setPlayer] = useState(null);
     return (
         <div className='home-section' id='home-section'>
-            <div className='home-section-cover'>
-                <div data-aos="fade-up" data-aos-anchor-placement="top-center" className='home-section-content h-full w-full flex flex-col items-center justify-center text-center aos-init aos-animate'>
-                    <h1 data-aos="zoom-in" data-aos-offset="160" className='text-white text-8xl font-bold ' >
-                        SARL E<span>I</span>PGBM
-                    </h1>
-                    
-                        {
-                            i18n.language === 'ar' ? (
-                                <p><span>IACM 36KV</span>{t("home.title")}</p>
-                              ) : (
-                                <p>{t("home.title")}<span>IACM 36KV</span></p>
-                              )  
-                        }
-                    
-                </div>
-            </div>
-            <video autoPlay muted loop>
-                <source src={introvideo}></source>
-            </video>
 
-            <div className='home-section-cursor flex items-center justify-center text-lg'>
-                <FontAwesomeIcon icon={ArrowDown} />
+            <div s data-aos="fade-up" data-aos-anchor-placement="top-center" className='home-section-content aos-init aos-animate'>
+
+                <div className='txt  flex justify-center items-center pt-40  '>
+                    <p className='homeTitle basis-3/5'>
+                        Empowering Startups <br /> with Cutting-Edge <br /> Solutions.
+                    </p>
+                    <div className='right basis basis-2/5'>
+                        <p className='welcome'>
+                            Welcome to our platform designed to fuel the growth of startups. We provide innovative solutions to help you succeed.
+                        </p>
+                        <div className='btns mt-4'>
+                            <button className='py-2 text-white'>Learn More</button>
+                            <button className='py-2 text-black'>Watch</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
             </div>
+
+
+
+            {/* <img src={bg} />*/}
+            <YouTube
+                className='vediopresentation' // Custom class for styling
+                videoId={'j7pPjNgeAvk'} // YouTube video ID
+                opts={{
+                    height: '600px', // Custom height
+                    width: `${screenWidth}px`, // Custom width
+                    playerVars: {
+                        autoplay: 1, // Autoplay the video
+                        loop: true
+                    },
+
+                }}
+                onReady={onReady}
+            />
+
+
         </div>
     )
 }

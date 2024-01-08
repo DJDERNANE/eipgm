@@ -1,16 +1,11 @@
 img{
     height: 80px;
 }
-h2{
-   
-        
-       
-        color: #4f5d75;
-    
+h5{   
+    color: #344051;
 }
 h1{
-    
-    
+    font-family: 'Montserrat', sans-serif;
     color: #001219;
 }
 @media screen and (max-width: 480px) {

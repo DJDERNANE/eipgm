@@ -1,29 +1,19 @@
 .navbar{
   transition: .3s ease-in-out;
   z-index: 100;
-  top: 60px;
   position: fixed;
-  height: 75px;
+  height: 85px;
   width: 100%;
+  top: 0;
 }
 .navbar.active{
   height: max-content;
 }
 .navbar.scrolled{
-  background-color: rgba(255, 255, 255, 0.9); 
-  backdrop-filter: blur(20px); 
+  background-color: rgba(255, 255, 255, 1); 
 }
-.navbar-logo {
-  font-weight: bold;
-  font-size: 1.3rem;
-  
-}
-.navbar-logo span{
-    color: red;
-}
-.navbar-logo img {
-    margin-right: 10px;
-    height: 30px;
+.navbar-logo img{
+  height: 60px;
 }
 
 .navbar-menu {

@@ -1,24 +1,19 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 
 /******Styles  **********/
 import './index.css';
 /*======================== */
-
-/********** Components ****************/
 import NavBar from './Components/NavBar/NavBar';
-import TopBar from './Components/TopBar/topBar';
-import Home from './Components/Home/Home';
-import About from './Components/About/About';
-import Services from './Components/Services/Services';
-import Produits from './Components/Produits/Produits';
-import Gallery from './Components/Gallery/Gallery';
-import Contact from './Components/Contact/Contact';
-import Footer from './Components/Footer/Footer';
-
-
-
+import LandingPage from './Pages/LandingPage';
+import Signup from './Pages/Signup';
+import Login from './Pages/Login';
+import Startup from './Pages/Startup';
+import { ChakraProvider } from '@chakra-ui/react';
+import StartupsPage from './Pages/StartupsPage';
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -38,29 +33,25 @@ function App() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
- 
 
   return (
+    <ChakraProvider>
     <div className="App">
+   
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/startup/:id" element={<Startup />} />
+        <Route path="/startupspage" element={<StartupsPage />} />
+      </Routes>
+    </Router>
 
-      <TopBar scrolling={scrolling} />
-      <NavBar scrolling={scrolling} />
 
-      <Home />
-
-      <About />
-
-      <Services />
-
-      <Produits />
-
-      <Gallery />
-
-      <Contact />
-
-      <Footer />
-
-    </div>
+  </div>
+    </ChakraProvider>
+   
   );
 }
 

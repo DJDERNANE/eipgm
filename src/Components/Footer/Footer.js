@@ -1,78 +1,82 @@
 import React from 'react';
 import './Footer.css';
+import logoWhite from '../../assets/logo-white.png'
+import qr from '../../assets/Qrcode.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot, faPhone, faFax, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import facebook from '../../assets/facebook-f.svg'
+import { faLocationDot, faPhone, faFax, faPaperPlane } from '@fortawesome/free-solid-svg-icons'
+import { faInstagram, faFacebook, faLinkedinIn, faTwitter } from '@fortawesome/free-brands-svg-icons';;
+
 
 export default function Footer() {
   return (
     <div id='footer-section'>
-      <div className='grid xs:grid-cols-1 md:grid-cols-3 footer-section-top md:gap-32 xs:gap-12 xs:pt-10 md:pt-16'>
-        <div className='footer-section-information xs:hidden md:block'>
-          <h1 data-aos="zoom-in" data-aos-offset="160" data-aos-delay="50">
-            information
-          </h1>
-          <p data-aos="zoom-in" data-aos-offset="160" data-aos-delay="200">
-            En 2018, EIPGBM a lancé la fabrication des (IACM 36 KV) interrupteur aérien à commande manuelle elle était la première entreprise algérienne à fabriquer des (IACM 36KV) Localement. Aujourd’hui, le taux d'integration locale à atteint 60% .
-          </p>
-        </div>
-        <div className='footer-section-contact'>
-          <h1 data-aos="zoom-in" data-aos-offset="160" data-aos-delay="50">
-            Contact
-          </h1>
-          <ul>
-            <li data-aos="zoom-in" data-aos-offset="160" data-aos-delay="200">
-              <FontAwesomeIcon style={{ color: 'red' }} icon={faLocationDot} />
-              <h2>
-                Zone d'activité M'sila
-              </h2>
-            </li>
-            <li data-aos="zoom-in" data-aos-offset="160" data-aos-delay="200">
-              <FontAwesomeIcon style={{ color: 'red' }} icon={faPhone} />
-              <h2>
-                +213 035 36 60 30 - 035 36 60 26
-              </h2>
-            </li>
-            <li data-aos="zoom-in" data-aos-offset="160" data-aos-delay="200">
-              <FontAwesomeIcon style={{ color: 'red' }} icon={faFax} />
-              <h2>
-                035 36 60 30 (Fax)
-              </h2>
-            </li>
-          </ul>
-        </div>
+      <div className='grid xs:grid-cols-1 md:grid-cols-4 footer-section-top md:gap-32 xs:gap-12 xs:pt-10 md:pt-16'>
         <div className='footer-section-newsletter'>
-          <h1 data-aos="zoom-in" data-aos-offset="160" data-aos-delay="50">
-            Newsletter
-          </h1>
-          <p data-aos="zoom-in" data-aos-offset="160" data-aos-delay="200">
-            Inscrivez-vous à notre newsletter hebdomadaire pour recevoir les dernières nouvelles.
-          </p>
-          <div className='relative mt-7 aos-init aos-animate'>
-            <input type='email' placeholder='Email ' />
-            <div className='newsletter-submit flex items-center justify-center text-white text-lg cursor-pointer'>
-            <FontAwesomeIcon style={{ color: 'white' }} icon={faArrowRight  } />
-            </div>
+          <img src={logoWhite} />
+          <p className='py-4'>Subcribe</p>
+          <div className='fromParent my-4 py-4 text-xl aos-init aos-animate'>
+            <input type='email' placeholder='Enter your email ' />
+            <FontAwesomeIcon className='send' icon={faPaperPlane} />
           </div>
         </div>
-      </div>
-
-      <div className='footer-section-bottom'>
-        <div className='grid md:grid-cols-2 xs:grid-cols-1'>
-          <div>
-            <h3>
-            EIPGBM © 2023 Tous les droits sont réservés - Développeur par  <span>innovate360</span>
-            </h3>
-          
-          </div>
-          <div className='social-media'>
+        
+        <div className='footer-section-contact'>
+          <h1 >
+            Support
+          </h1>
           <ul>
-            <li>
-              <img src={facebook} alt='facebook'/>
+            <li >
+              <FontAwesomeIcon className='pr-2' style={{ color: 'white' }} icon={faLocationDot} />
+              
+                Adddress
+              
+            </li>
+            <li >
+              <FontAwesomeIcon className='pr-2'  style={{ color: 'white' }} icon={faPhone} />
+              
+                +213 035 36 60 30 
+              
+            </li>
+            <li >
+              <FontAwesomeIcon className='pr-2'   style={{ color: 'white' }} icon={faFax} />
+              
+              algtlc@gmail.com
             </li>
           </ul>
+        </div>
+
+        <div className='footer-section-contact'>
+          <h1 >
+            Quik Links
+          </h1>
+          <ul>
+            <li >
+             Privacy
+              
+            </li>
+            <li >
+              Terms of Use
+            </li>
+            <li >
+              FAQ
+            </li>
+            <li >
+              Contact
+            </li>
+          </ul>
+        </div>
+
+        <div className='footer-section-newsletter'>
+          <img src={qr} />
+          
+          <div className='my-4 py-4 grid grid-cols-4 text-xl aos-init aos-animate'>
+            <FontAwesomeIcon icon={faFacebook} />
+            <FontAwesomeIcon icon={faTwitter} />
+            <FontAwesomeIcon icon={faLinkedinIn} />
+            <FontAwesomeIcon icon={faInstagram} />
           </div>
         </div>
+
       </div>
 
     </div>

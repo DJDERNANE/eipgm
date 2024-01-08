@@ -1,32 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 #footer-section {
     width: 100%;
-    background: #005498;
+    background: #000000;
     position: relative;
+    color: white;
+    font-family: 'Poppins', sans-serif;
 }
 .footer-section-top {
     padding: 3% 10% 2% 10%;
     text-align: start;
     position: relative;
 }
-.footer-section-top:after {
-    content: "";
-    position: absolute;
-    bottom: 15px;
-    height: 1px;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: rgba(206,212,218,.2);
-}
+
 #footer-section h1 {
     font-weight: 700;
     color: #fff;
     font-size: 1.6rem;
 }
+#footer-section input {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    outline: none;
+    background-color: transparent;
+    border: white 2px solid;
+    border-radius: 3px;
+    color: white;
+    padding: 8px 6px;
+    font-size: 1rem;
+   
+}
+.fromParent{
+    position: relative;
+    width: 230px;
+}
+.send{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
 #footer-section p {
-    color: #ced4da;
-    margin-top: 11px;
-    font-size: 1.1rem;
+    color: #ffffff;
+    font-size: 1.5rem;
 }   
 .footer-section-contact ul {
     display: flex;
@@ -36,68 +51,8 @@
 .footer-section-contact ul li {
     display: flex;
     align-items: center;
-    margin: 1.1rem 0;
+    margin: 0.8rem 0;
+    font-size: 0.9rem;
 }
-.footer-section-newsletter input {
-    height: 56px;
-    background: #fff;
-    width: 100%;
-    color: #001219;
-    font-weight: 600;
-    padding: 15px 70px 15px 10px;
-}
-.newsletter-submit {
-    position: absolute;
-    height: 80%;
-    top: 27px;
-    transform: translateY(-50%);
-    width: 50px;
-    margin-right: 11px;
-    border-radius: 6px;
-    right: 0;
-    background: #ff4747;
-}
-.footer-section-contact ul li h2 {
-    color: #fff;
-    padding-left: 20px;
-}
-.footer-section-bottom {
-    padding: 15px 10% 35px 10%;
-    text-align: start;
-    color: #fff;
-    font-size: 16px;
-}
-#footer-section:after {
-    position: absolute;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 16px;
-    background: #ff4747;
-}
-.footer-section-bottom span {
-    color: #ff5c8a;
-    font-weight: 700;
-}
-.social-media ul {
-    display: flex;
-    justify-content: end;
-}   
-.social-media ul li {
-    cursor: pointer;
-    margin: 0 15px;
-    border-radius: 50%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    background: #fff;
-    color: #001219;
-    font-size: 1.3rem;
-    transition: .3s ease-in-out;
-}
-.social-media ul li img{
-    width: 15px;
- 
-}
+
+
